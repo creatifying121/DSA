@@ -32,8 +32,8 @@ class Solution
         pse[0] = -1; 
         st.push(arr[0]);
         
-        //start traversing from second last array element
-        for(int i=n-2; i>=0; i--){
+        //start traversing from 1th array element
+        for(int i=1; i<n; i++){
             //pop out the elements from stack until we find the peek element to be smaller than current array element, as peek can be a possible smallest element
             while(st.size()>0 && arr[i] <= st.peek()){
                 st.pop();
